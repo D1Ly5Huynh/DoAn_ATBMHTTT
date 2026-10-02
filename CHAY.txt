@@ -1,0 +1,20 @@
+Nhanh A, dung paper Pasini, commit a299bb6.
+Moi lenh chay trong thu muc nay. Python nam o .venv/, khong can Poetry.
+
+Oracle DOM, cong 127.0.0.1:5555:
+    ./serve_backend.sh
+
+Test detector LSTM da co checkpoint (Table 4):
+    .venv/bin/python src/test_detector.py \
+      --testset data/10/detectors/test.csv \
+      --vocab_file data/10/vocabulary.csv \
+      --model lstm \
+      --checkpoint_folder runs/lstm/10/run_0 \
+      --seed 42
+
+Doi --model thanh mlp hoac cnn va --checkpoint_folder thanh runs/mlp/10/run_0 hoac runs/cnn/10/run_0.
+
+PDF paper: papers/Pasini_2026_JSS_arXiv.pdf
+So da do: ket_qua/
+Du lieu Figshare: data/10/
+Checkpoint: runs/lstm, runs/mlp, runs/cnn
